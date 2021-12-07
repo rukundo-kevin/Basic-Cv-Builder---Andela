@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 *{
-    margin:0;
+    margin:4em;
+    box-sizing: border-box;
 }
 hr{
     height: 4px;
@@ -13,12 +14,11 @@ hr{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 595px;    
+    width: 595px;   
 }
 .title{
    position:absolute;
-   margin-left: 60px;
-   left: 8.07%;
+   left: 48px;
    right: 58.82%;
    top: 48px;
    color: #101214;
@@ -29,6 +29,10 @@ hr{
 }
 .title .name{
     font-size: 24px;
+}
+
+.title:hover{
+  cursor: pointer;
 }
 .title .role{
     font-size: 18px;
@@ -64,19 +68,21 @@ img{
     top: 140px;    
 }
 .xp-title{
+
     font-size:11px;
     text-transform: uppercase;
     color: #73808D;
 }
 .xp-role{
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
   font-size: 11px;
-  font-family: inter;
   letter-spacing: 2px;
+  font-family: inter;
 
 }
 .xp-name{
+    font-family: inter;
     font-size: 9px;
     font-weight: 500;
 }
@@ -86,9 +92,9 @@ img{
     color: #73808D;   
 }
 .xp-description{
-    font-family: inter;
-    font-size:9px;
-    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
     margin-bottom: 24px;
 }
 
@@ -98,5 +104,15 @@ img{
     width: 140px;
     left: 407px;
     top: 140px;
-    border-radius: nullpx;    
+    color: #73808D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+.info h3{
+    font-family: inter;
+    font-style: normal;
+    margin-top: 2em;
 }
