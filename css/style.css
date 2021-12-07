@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 *{
-    margin:4em;
-    box-sizing: border-box;
+     margin: 0; 
 }
 hr{
     height: 4px;
@@ -9,12 +8,14 @@ hr{
     left: 0px;
     top: 0px;
     background: #101214;
+    margin-left: 20em;
 }
 .wrapper{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 595px;   
+    margin-left:21em;
 }
 .title{
    position:absolute;
@@ -24,6 +25,7 @@ hr{
    color: #101214;
    line-height: 28px;
    font-family: Arial;
+   margin-left: 19em;
    position: fixed;
    z-index: 10;
 }
@@ -35,7 +37,7 @@ hr{
   cursor: pointer;
 }
 .title .role{
-    font-size: 18px;
+    font-size: 16px;
     font-family: Inter;
 }
 .avatar{
@@ -46,6 +48,7 @@ hr{
     top: 36px;
     filter: drop-shadow(0px 2px 4px rgba(16, 18, 20, 0.08));
     position:fixed;
+    margin-left: 23em;
     z-index: 10;
 }
 img{
@@ -65,7 +68,7 @@ img{
     font-family: Arial;
     width: 335px;
     left: 48px;
-    top: 140px;    
+    top: 150px;    
 }
 .xp-title{
 
