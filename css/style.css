@@ -27,7 +27,7 @@ hr{
    line-height: 28px;
    font-family: Arial;
    margin-left: 19em;
-   position: fixed;
+   position: sticky;
    z-index: 100;
 }
 .title .name{
@@ -48,7 +48,7 @@ hr{
     left: 407px;
     top: 36px;
     filter: drop-shadow(0px 2px 4px rgba(16, 18, 20, 0.08));
-    position:fixed;
+    position:sticky;
     margin-left: 23em;
     z-index: 10;
 }
