@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 *{
      margin: 0; 
-     z-index: -100;
 }
 hr{
     height: 4px;
@@ -9,26 +8,36 @@ hr{
     left: 0px;
     top: 0px;
     background: #101214;
-    margin-left: 20em;
 }
+
 .wrapper{
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     width: 595px;   
-    margin-left:21em;
+}
+.head{
+  position: absolute;
+  background-color: white;
+  height: 107px;
+  width: 500px;
+   left: 48px;
+   right: 0;
+   top: 0;
+   position: fixed;
+   z-index: 1;
+   transition: .5 ease-in;
+}
+.head-fixed{
+  border-bottom: 2px solid #eee;
 }
 .title{
-   position:absolute;
    left: 48px;
    right: 58.82%;
    top: 48px;
    color: #101214;
    line-height: 28px;
    font-family: Arial;
-   margin-left: 19em;
-   position: sticky;
-   z-index: 100;
+   background-color: white;
 }
 .title .name{
     font-size: 24px;
@@ -48,16 +57,20 @@ hr{
     left: 407px;
     top: 36px;
     filter: drop-shadow(0px 2px 4px rgba(16, 18, 20, 0.08));
-    position:sticky;
-    margin-left: 23em;
-    z-index: 10;
+    background-color: white;
+    border-radius: 50%;
 }
+
 img{
     height: 72px;
     width: 72px;
     left: 407px;
     top: 36px;
     border-radius: 50%;
+}
+.top{
+  position: fixed;
+  z-index: 10;
 }
 .xp{
     position: absolute;
@@ -95,6 +108,9 @@ img{
     letter-spacing: 2px;
     color: #73808D;   
 }
+.xp-duration-edu{
+  margin-bottom: 12px;
+}
 .xp-description{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
@@ -104,7 +120,6 @@ img{
 
 .info{
     position: absolute;
-    height: 558px;
     width: 140px;
     left: 407px;
     top: 140px;
@@ -119,4 +134,57 @@ img{
     font-family: inter;
     font-style: normal;
     margin-top: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper{
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+  }
+
+.head{
+  position: absolute;
+  background-color: white;
+  height: 197px;
+  width: 500px;
+   left: 0;
+   right: 0;
+   top: 0;
+   position: fixed;
+   z-index: 1;
+   transition: .5 ease-in;
+}
+.head-fixed{
+  border-bottom: 2px solid #eee;
+}
+
+  hr,.title,.avatar {
+    margin-left:0px;
+  }
+   hr,.wrapper{
+        width: 100%;
+   }
+  .title{
+    left:55px;
+    top:130px;
+    right:0;
+  }
+  .avatar{
+    left:120px;
+    top:30px;
+  }
+  .xp{
+    left:40px;
+    top:42em;
+    right: 0;
+  }
+  .info{
+    width: 200px;
+    left:40px;
+    top:21em;
+    display: flex;
+    flex-direction: column;
+
+  }
 }
