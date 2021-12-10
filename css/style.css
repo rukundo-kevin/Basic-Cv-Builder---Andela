@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 *{
      margin: 0; 
+}body{
+  margin-left: 15em;
 }
 hr{
     height: 4px;
     width: 595px;
-    left: 0px;
+    left: 15em;
     top: 0px;
     background: #101214;
 }
@@ -20,7 +22,7 @@ hr{
   background-color: white;
   height: 107px;
   width: 500px;
-   left: 48px;
+   left: 18em;
    right: 0;
    top: 0;
    position: fixed;
@@ -31,7 +33,7 @@ hr{
   border-bottom: 2px solid #eee;
 }
 .title{
-   left: 48px;
+   left: 18em;
    right: 58.82%;
    top: 48px;
    color: #101214;
@@ -54,7 +56,7 @@ hr{
     position: absolute;
     width: 72px;
     height: 72px;
-    left: 407px;
+    left: 41em;
     top: 36px;
     filter: drop-shadow(0px 2px 4px rgba(16, 18, 20, 0.08));
     background-color: white;
@@ -82,7 +84,7 @@ img{
     font-family: Arial;
     width: 335px;
     left: 48px;
-    top: 150px;    
+    top: 180px;    
 }
 .xp-title{
 
@@ -156,9 +158,13 @@ img{
    transition: .5 ease-in;
 }
 .head-fixed{
-  border-bottom: 2px solid #eee;
-}
-
+box-shadow: 14px -12px 28px rgb(0 0 0 / 25%), 3px 5px 10px rgb(0 0 0 / 22%);  }
+  body{
+    margin-left: 0;
+  }
+  hr{
+    left: 0;
+  }
   hr,.title,.avatar {
     margin-left:0px;
   }
